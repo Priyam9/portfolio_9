@@ -73,11 +73,11 @@
 
 /* SECTION */
 #section1, #section2, #section3, #section4 {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
 }
 
 /* SECTION-1 */
@@ -412,13 +412,15 @@
 
 /* FOOTER */
 .footer {
-    background-color: #000;
-    color: white;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #000;
+    color: white;
+    position: relative;
 }
+
 
 .footer-section1, .footer-section2 {
     width: 100%;
@@ -455,8 +457,8 @@
 
 .footer-col {
     flex: 1;
-    min-width: 200px;
-    margin: 10px;
+    min-width: 200px; 
+    max-width: 300px; 
 }
 
 .footer-col h1 {
@@ -487,13 +489,19 @@
 }
 
 @media (max-width: 768px) {
-    .social-container {
+    .section1-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-row {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-row {
-        flex-direction: column; /* Stack footer items on small screens */
+    .social-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .card-container {
@@ -502,7 +510,7 @@
     }
 
     .card {
-        width: 90%; /* Make cards responsive */
+        width: 90%;
         height: auto;
     }
 }
