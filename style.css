@@ -409,7 +409,7 @@ footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ensure the footer content stays in one line */
     justify-content: space-between;
     align-items: center;
 }
@@ -450,13 +450,16 @@ footer .socials {
 }
 
 footer .socials a {
-    color: purple;
+    color: #ede8f5;
     margin: 0 10px;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none; 
     transition: color 0.3s;
 }
 
+footer .socials a:hover {
+    color: #ff00ff;
+}
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
     .section1-col h1 {
@@ -511,10 +514,12 @@ footer .socials a {
     }
 
     footer .footer-content {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     footer .footer-content .footer-col {
+        flex: 1 1 auto;
         min-width: 100%;
         margin: 10px 0;
     }
