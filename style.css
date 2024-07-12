@@ -471,37 +471,71 @@
     margin: 5px 0;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .section1-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section1-col.img-col {
-        order: 1; /* Image on top */
-        margin-bottom: 20px;
-    }
-
-    .section1-col.text-col {
-        text-align: center;
-    }
-}
+/* Media Queries for Mobile and Tablet Screens */
 
 @media (max-width: 768px) {
-    .section1-row {
+    .navigation {
         flex-direction: column;
-        align-items: center;
-    }
-    
-    .footer-row {
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .social-container {
-        flex-direction: column;
-        align-items: center;
+    .portfolio {
+        font-size: 24px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #section1, #section2, #section3, #section4 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .section1-col h1 {
+        font-size: 36px;
+    }
+
+    .section1-col h3 {
+        font-size: 20px;
+    }
+
+    .section1-col p {
+        font-size: 16px;
+    }
+
+    .section2-heading {
+        font-size: 36px;
+    }
+
+    .section2-col h3 {
+        font-size: 22px;
+    }
+
+    .section2-col p {
+        font-size: 16px;
+    }
+
+    .portfolio1 h1 {
+        font-size: 30px;
+    }
+
+    .timeline-item h2 {
+        font-size: 16px;
+    }
+
+    .timeline-item h3 {
+        font-size: 20px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
     }
 
     .card-container {
@@ -510,17 +544,61 @@
     }
 
     .card {
-        width: 90%;
-        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer-col h1 {
+        font-size: 1em;
+    }
+
+    .footer-col p {
+        font-size: 0.9em;
     }
 }
 
-@media (max-width: 480px) {
-    .portfolio {
-        font-size: 24px; /* Adjust font size for smaller screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-item {
+        font-size: 18px;
     }
 
-    .about-btn {
-        padding: 8px 16px;
+    #section1 {
+        padding: 40px 20px;
+    }
+
+    .section1-col h1 {
+        font-size: 48px;
+    }
+
+    .section1-col h3 {
+        font-size: 22px;
+    }
+
+    .section1-col p {
+        font-size: 18px;
+    }
+
+    .section2-heading {
+        font-size: 40px;
+    }
+
+    .portfolio1 h1 {
+        font-size: 32px;
+    }
+
+    .section-heading {
+        font-size: 36px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .footer-col h1 {
+        font-size: 1.1em;
+    }
+
+    .footer-col p {
+        font-size: 0.95em;
     }
 }
