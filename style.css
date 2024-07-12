@@ -140,8 +140,8 @@
 }
 
 .section1-col h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 10px;
     animation: slideInLeft 3s forwards;
 }
 
@@ -437,7 +437,7 @@ footer .footer-content ul li {
 
 footer .footer-content ul li a {
     color: #ede8f5;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     transition: color 0.3s;
 }
 
@@ -453,13 +453,13 @@ footer .socials a {
     color: #ede8f5;
     margin: 0 10px;
     font-size: 20px;
+    text-decoration: none; /* Remove underline */
     transition: color 0.3s;
 }
 
 footer .socials a:hover {
     color: #ff00ff;
 }
-
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
     .section1-col h1 {
@@ -491,6 +491,30 @@ footer .socials a:hover {
     }
     .portfolio1 h1 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-content {
+        padding: 10px;
+    }
+
+    .section-content h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .section-content p {
+        font-size: 16px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+
+    footer .footer-content .footer-col {
+        min-width: 100%;
+        margin: 10px 0;
     }
 }
 
