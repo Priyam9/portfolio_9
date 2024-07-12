@@ -469,86 +469,50 @@
     margin: 5px 0;
 }
 
-/* MEDIA QUERIES */
+/* Media Queries */
 @media (max-width: 1200px) {
-    .section1-col h1 {
-        font-size: 50px;
+    .section1-row {
+        flex-direction: column;
+        align-items: center;
     }
-    .section2-heading {
-        font-size: 40px;
-    }
-}
 
-@media (max-width: 992px) {
-    .section1-col h1 {
-        font-size: 40px;
+    .section1-col.img-col {
+        order: 1; /* Image on top */
+        margin-bottom: 20px;
     }
-    .section2-heading {
-        font-size: 35px;
+
+    .section1-col.text-col {
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
-    .section1-col h1 {
-        font-size: 35px;
-    }
-    .section1-col h3 {
-        font-size: 22px;
-    }
-    .section2-heading {
-        font-size: 30px;
-    }
-    .portfolio1 h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .section1-col h1 {
-        font-size: 28px;
-    }
-    .section1-col h3 {
-        font-size: 20px;
-    }
-    .section2-heading {
-        font-size: 28px;
-    }
-    .portfolio1 h1 {
-        font-size: 25px;
-    }
-    .card {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 400px) {
-    .section1-col h1 {
-        font-size: 24px;
-    }
-    .section1-col h3 {
-        font-size: 18px;
-    }
-    .section2-heading {
-        font-size: 24px;
-    }
-    .portfolio1 h1 {
-        font-size: 20px;
-    }
-    .card {
-        width: 250px;
-        height: 250px;
-    }
     .social-container {
         flex-direction: column;
+        align-items: center;
     }
-    .button-container {
+
+    .footer-row {
+        flex-direction: column; /* Stack footer items on small screens */
+    }
+
+    .card-container {
         flex-direction: column;
+        align-items: center;
     }
-    footer .footer-content {
-        flex-direction: column;
+
+    .card {
+        width: 90%; /* Make cards responsive */
+        height: auto;
     }
-    footer .footer-content .footer-col {
-        text-align: center;
+}
+
+@media (max-width: 480px) {
+    .portfolio {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .about-btn {
+        padding: 8px 16px;
     }
 }
