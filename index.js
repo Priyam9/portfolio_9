@@ -17,3 +17,7 @@
             }
         });
     });
+
+    window.onload = function() {
+        alert("Welcome to my portfolio! This site is still in development.");
+    };
